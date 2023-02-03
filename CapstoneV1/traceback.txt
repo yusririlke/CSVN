@@ -1,0 +1,22 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 20, in script
+    pov "My name is [povname]!"
+Exception: Sayer 'pov' is not defined.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 20, in script
+    pov "My name is [povname]!"
+  File "C:\Users\alex1\OneDrive\Desktop\renpy-8.0.3-sdk\renpy\ast.py", line 881, in execute
+    who = eval_who(self.who, self.who_fast)
+  File "C:\Users\alex1\OneDrive\Desktop\renpy-8.0.3-sdk\renpy\ast.py", line 774, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who)
+Exception: Sayer 'pov' is not defined.
+
+Windows-10-10.0.19044 AMD64
+Ren'Py 8.0.3.22090809
+ Version 1.0
+Mon Jan 30 14:35:00 2023
