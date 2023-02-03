@@ -1,3 +1,12 @@
-Use case text, robustness diagrams, use case diagrams and class diagrams are contained within 
-487 Capstone Presentation.docx
-GUI Mockups has GUI Mockups
+Assets: Your hub for stuff you want to put in game
+	- AI Generated: AI Generated assets including backgrounds, sprites music etc.
+	- Outside assets: references, imported non-AI generated assets
+	- In file: Assets used in current game, seperate from renpy assets used in game.
+
+Capstone V1: This is where the code and everything to do with renpy is stored, wheeee.
+	
+Documentation: Stuff we need to submit to the  clients that TALKS ABOUT us, our progress and/or our product.
+
+README: please, i exist to help you. validate my existence. Actually, I'm quite okay here but check in on me later.
+
+
