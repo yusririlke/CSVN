@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/custom_screens.rpy", line 40: 'return' is not a keyword argument or valid child for the imagebutton statement.
-    action return
-                 ^
+File "game/script.rpy", line 40: end of line expected.
+    ".":b
+        ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Sun Feb  5 20:40:00 2023
+Mon Feb  6 18:20:01 2023
