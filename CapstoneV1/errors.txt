@@ -24,3 +24,5 @@ File "game/script.rpy", line 41: Line is indented, but the preceding return stat
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
 Mon Jan 30 14:34:00 2023
+
+bruh
