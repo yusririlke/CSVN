@@ -2,9 +2,7 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 40: end of line expected.
-    ".":b
-        ^
+File "game/qEasy.rpy", line 16: Indentation mismatch.
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Mon Feb  6 18:20:01 2023
+Mon Feb 13 16:56:02 2023

@@ -28,43 +28,13 @@ label start:
     # Dialogue starts
     show screen gameUI
 
-    admin "This is a basic display of the project."
+    #admin "This is a basic display of the project."
 
-    pov "Testing who is saying this."
+    #pov "Testing who is saying this."
 
-    l "In C++ you should always end statements with..."
+    jump qEasy
 
-    menu:
-        extend ''
-        ";":
-            jump ans1
-        ".":
-            jump ans2
-        ":":
-            jump ans2
-        "(Why am I here)":
-            jump ans3
-
-    label ans1:
-        l "Correct. +1 knowledge"
-        $ knowledge += 1
-
-
-        jump cont
-
-    label ans2:
-        l "Incorrect. Disgraceful."
-
-        jump cont
-
-    label ans3:
-        l "[povname], what's wrong? Cat got your tongue?"
-
-        l "Do pay attention next time."
-
-        pov "ok"
-
-        jump cont
+    
 
     label cont:
         l "Next up, an intermediate question"
