@@ -60,3 +60,58 @@ label QE2:
             l "Incorrect. Disgraceful."
 
             jump QE3
+
+label QE3:
+
+    l "What is an algorithm?"
+
+    menu:
+            extend ''
+            "  A type of hardware component":
+                jump ansQE3X
+            "A set of instructions to accomplish a specific task":
+                jump ansQE3O
+            "A programming language":
+                jump ansQE3X
+            " A tool for testing software":
+                jump ansQE3X
+
+    label ansQE3O:
+            l "Correct. +1 knowledge"
+            $ knowledge += 1
+
+
+            jump QE4
+
+    label ansQE3X:
+            l "Incorrect. Disgraceful."
+
+            jump QE4
+
+
+label QE4:
+
+    l "What is a computer program?"
+
+    menu:
+            extend ''
+            " A type of hardware component":
+                jump ansQE4X
+            "A data type":
+                jump ansQE4X
+            "An input device":
+                jump ansQE4X
+            " A sequence of instructions executed by a computer":
+                jump ansQE4O
+
+    label ansQE4O:
+            l "Correct. +1 knowledge"
+            $ knowledge += 1
+
+
+            jump cont
+
+    label ansQE4X:
+            l "Incorrect. Disgraceful."
+
+            jump cont
