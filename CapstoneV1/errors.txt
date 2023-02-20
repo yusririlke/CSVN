@@ -2,7 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/qEasy.rpy", line 16: Indentation mismatch.
+File "game/intro.rpy", line 22: expected statement.
+    me
+      ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Mon Feb 13 16:56:02 2023
+Sun Feb 19 23:06:28 2023

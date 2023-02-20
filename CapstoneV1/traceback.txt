@@ -1,22 +1,35 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/qEasy.rpy", line 62, in script
-    jump QE3
-ScriptError: could not find label 'QE3'.
+  File "game/intro.rpy", line 2, in script
+    image  bg dorm = images/bg_dorm.png
+  File "game/intro.rpy", line 2, in script
+    image  bg dorm = images/bg_dorm.png
+  File "game/intro.rpy", line 2, in <module>
+    image  bg dorm = images/bg_dorm.png
+NameError: name 'images' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/qEasy.rpy", line 62, in script
-    jump QE3
-  File "C:\Users\Yusri Zafri\Desktop\renpy-8.0.3-sdk\renpy\ast.py", line 1974, in execute
-    rv = renpy.game.script.lookup(target)
-  File "C:\Users\Yusri Zafri\Desktop\renpy-8.0.3-sdk\renpy\script.py", line 927, in lookup
-    raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'QE3'.
+  File "C:\Users\Yusri Zafri\Desktop\renpy-8.0.3-sdk\renpy\bootstrap.py", line 277, in bootstrap
+    renpy.main.main()
+  File "C:\Users\Yusri Zafri\Desktop\renpy-8.0.3-sdk\renpy\main.py", line 558, in main
+    renpy.game.context().run(node)
+  File "game/intro.rpy", line 2, in script
+    image  bg dorm = images/bg_dorm.png
+  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/site-packages/future/utils/__init__.py", line 441, in raise_
+  File "game/intro.rpy", line 2, in script
+    image  bg dorm = images/bg_dorm.png
+  File "C:\Users\Yusri Zafri\Desktop\renpy-8.0.3-sdk\renpy\ast.py", line 1230, in execute
+    img = renpy.python.py_eval_bytecode(self.code.bytecode)
+  File "C:\Users\Yusri Zafri\Desktop\renpy-8.0.3-sdk\renpy\python.py", line 1085, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/intro.rpy", line 2, in <module>
+    image  bg dorm = images/bg_dorm.png
+NameError: name 'images' is not defined
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.0.3.22090809
  Version 1.0
-Mon Feb 13 18:38:00 2023
+Sun Feb 19 23:13:39 2023
