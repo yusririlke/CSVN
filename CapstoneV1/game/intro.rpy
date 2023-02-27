@@ -19,7 +19,6 @@ roomate "Ready when you are"
 
 
 #you walk to the desk see worker, player picks name
-me
 worker "Are you for new student orientation?"
 me "Yeah"
 
