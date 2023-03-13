@@ -2,25 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 18: expected statement.
-    povname = renpy.input("What is your name?")
-            ^
-
-File "game/script.rpy", line 20: expected statement.
-    povname = povname.strip()
-            ^
-
-File "game/script.rpy", line 22: if statement expects a non-empty block.
-    if not povname:
-                   ^
-
-File "game/script.rpy", line 24: expected statement.
-    povname = "Pat Smith"
-            ^
-
-File "game/script.rpy", line 41: Line is indented, but the preceding return statement statement does not expect a block. Please check this line's indentation.
-    admin "This is a basic display of the project."
-    ^
+File "game/intro.rpy", line 38: end of line expected.
+    me "It seemed like they were all looking through pamphlets and talking to the workers about where they should go".
+                                                                                                                     ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Mon Jan 30 14:34:00 2023
+Sat Mar 11 21:24:12 2023
