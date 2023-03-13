@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/intro.rpy", line 22: expected statement.
-    me
-      ^
+File "game/intro.rpy", line 38: end of line expected.
+    me "It seemed like they were all looking through pamphlets and talking to the workers about where they should go".
+                                                                                                                     ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Sun Feb 19 23:06:28 2023
+Sat Mar 11 21:24:12 2023
