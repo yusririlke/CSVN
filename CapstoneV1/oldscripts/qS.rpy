@@ -1,13 +1,10 @@
   #jump qEasy
+label cont:
+    l "Next up, an intermediate question"
 
+    pov "I think I'm ready..."
 
-
-    label cont:
-        l "Next up, an intermediate question"
-
-        pov "I think I'm ready..."
-
-        l "What is a linked list?"
+    l "What is a linked list?"
 
     menu:
         extend ''
