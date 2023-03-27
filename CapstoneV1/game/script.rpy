@@ -1,9 +1,8 @@
-# The script of the game goes in this file.
-
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
 define teacher = Character("Teacher")
+define libraryw = Character("Worker")
 define profe = Character("Array")
 define phone = Character("Phone")
 define conwell = Character("Conwell")
@@ -18,6 +17,7 @@ define reena = Character("Reena")
 define stomach = Character("Stomach")
 define worker = Character("Volunteer")
 define book = Character("Textbook")
+define lily = Character("Lily")
 default knowledge = 1
 default stress = 5
 default money = 10
@@ -39,6 +39,8 @@ image hello = "images/helloworld.png"
 image hello1 = "images/helloworld1.png"
 image hello2 = "images/helloworld2.png"
 image hellop = "images/helloworldprac.png"
+image living day = "images/living_day.png"
+image dtype1 = "images/dtype1.png"
 
 # The game starts here.
 

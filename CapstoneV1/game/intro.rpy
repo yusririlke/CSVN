@@ -24,7 +24,7 @@ show vicNeutral with dissolve
 vic  "'Don’t sweat it, we got time.'"
 vic  "'I made us some breakfast bagels. I’m gonna go save us some seats so don’t be late, sleepyhead!'"
 
-me "Vic short for Victor is a classic chill liberal arts major, ready to talk to anyone about anything and extend a friendly hand."
+me "Vic, short for Victor is a classic chill liberal arts major, ready to talk to anyone about anything and extend a friendly hand."
 
 me "I just met him a week ago, but we quickly got along like we've known each other since elementary school."
 
@@ -148,6 +148,8 @@ vic "'I think I'm gonna chill here and relax, ice cream doesn't sit well with me
 povname "'Ummm well... What do I do now?'"
 
 menu:
+    extend ''
+
     "Go back to my room and relax":
         play sound "audio/confirm.wav"
         jump relax
@@ -174,8 +176,6 @@ label relax:
     unknown "'Because you went to bed early you feel well rested and lost a point of stress.'"
     jump stattuto
 
-
-
 label tour:
     povname "'I think I'm going to explore campus a bit more.'"
     povname "'I'm feeling a bit nervous and want to see a little more of campus before classes start.'"
@@ -187,7 +187,7 @@ label tour:
     povname "I go back to campus and start wandering the halls."
     povname "Upon exploring I look for the classrooms for my first day of class."
     povname "While most of them are easy to find, one of them was in an awkward hallway that had me lost."
-    povname "Feeling happy that I explored campus I return back to my dorm."
+    povname "Feeling happy that I explored campus I return to my dorm."
     scene bg dorm with dissolve
     povname "I return to my room, lay on my bed and realize that tomorrow is my first day of class."
     povname "Both excited and nervous, I feel ready for my first day of CS to begin."
@@ -195,8 +195,6 @@ label tour:
     $ knowledge += 1
     unknown "'Because you decided to explore campus your knowledge of the area went up you gained a point of knowledge.'"
     jump stattuto
-
-
 
 label unpack:
     povname "'I think I'm going to finish unpacking all my stuff.'"

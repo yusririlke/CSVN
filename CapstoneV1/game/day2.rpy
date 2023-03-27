@@ -7,7 +7,7 @@ povname "'Ugh, couldn't beat the alarm today.'"
 scene bg dorm with dissolve
 play music "audio/dorm.wav"
 povname "'Must have been that study session last night made me oversleep."
-povname "I leave my room and see vic in the common area."
+povname "I leave my room and see Vic in the common area."
 
 show vicNeutral with dissolve
 vic "'You're up late again as per usual.''"
@@ -27,7 +27,7 @@ povname "I then walk out the door and start walking to class."
 scene classday with dissolve
 povname "I walk into my CMPSC 111 class just on time today."
 povname "Despite walking into the classroom at the exact time class is supposed to start I noticed a lot of the chairs were still empty."
-povname "Maybe computer science students are lazy about getting into class at the correct time?"
+povname "Maybe comp*uter science students are lazy about getting into class at the correct time?"
 povname "A little after sitting down I see professor Array walk in."
 show prof with dissolve
 profe "'Welcome to class today we're going to begin our lecture.'"
@@ -116,4 +116,4 @@ label day2c:
     povname "'That's awful, I'll keep that in mind.'"
     phone "'As your friend Vic said, be careful with your money.'"
     phone "'You're going to lose $5 every day from lunch and every day where you are not able to buy food is a big cause of stress.'"
-    phone "'If stress gets to high you will drop out, and it is an instant game over.'"
+    phone "'If stress gets too high you will drop out, and it is an instant game over.'"
