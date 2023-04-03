@@ -6,7 +6,7 @@ povname "'mmnh'"
 povname "Well, I beat the alarm today."
 play music "audio/dorm.wav"
 povname "I get ready for a morning of class and oh, my first day at work."
-#TODO: Fix tone? Inclination? eh? oh?
+
 # spain peko
 
 scene living day with dissolve
@@ -107,7 +107,7 @@ menu:
     "The Nachos":
         play sound "audio/confirm.wav"
         jump nachos
-    "The Salad";
+    "The Salad":
         play sound "audio/confirm.wav"
         jump salad
 
@@ -123,12 +123,14 @@ label nachos:
     vic "I take it back, that's waay cheesier"
 
 label salad:
-    vic "I see someone's on a diet. THere's extra dressing on the side."
+    vic "I see someone's on a diet. There's extra dressing on the side."
     povname "'Ranch, really?'"
     vic "I mean it's just spicy mayonnaise"
-    povname "Vic, no."
+    povname "'Vic, no.'"
 
 scene bg dorm with dissolve
 povname "I finished the rest of the food and settled into bed"
 povname "Never thought stacking books would take so much out of me. Hopefully tomorrow will be better. "
+scene blank with dissolve
+jump day4
 #TODO: Fade to black?

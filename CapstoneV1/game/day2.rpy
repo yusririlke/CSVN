@@ -7,7 +7,7 @@ povname "'Ugh, couldn't beat the alarm today.'"
 scene bg dorm with dissolve
 play music "audio/dorm.wav"
 povname "'Must have been that study session last night made me oversleep."
-povname "I leave my room and see Vic in the common area."
+povname "I leave my room and see vic in the common area."
 
 show vicNeutral with dissolve
 vic "'You're up late again as per usual.''"
@@ -27,7 +27,7 @@ povname "I then walk out the door and start walking to class."
 scene classday with dissolve
 povname "I walk into my CMPSC 111 class just on time today."
 povname "Despite walking into the classroom at the exact time class is supposed to start I noticed a lot of the chairs were still empty."
-povname "Maybe comp*uter science students are lazy about getting into class at the correct time?"
+povname "Maybe computer science students are lazy about getting into class at the correct time?"
 povname "A little after sitting down I see professor Array walk in."
 show prof with dissolve
 profe "'Welcome to class today we're going to begin our lecture.'"
@@ -116,4 +116,33 @@ label day2c:
     povname "'That's awful, I'll keep that in mind.'"
     phone "'As your friend Vic said, be careful with your money.'"
     phone "'You're going to lose $5 every day from lunch and every day where you are not able to buy food is a big cause of stress.'"
-    phone "'If stress gets too high you will drop out, and it is an instant game over.'"
+    phone "'If stress gets to high you will drop out, and it is an instant game over.'"
+    phone "'Make sure to watch your stress levels.'"
+    phone "'You then decide to walk back home with Vic.'"
+    scene bg dorm with dissolve
+    povname "Cost of lunch is starting to pile up."
+    povname "I'm going to need to find a source of money, I wonder if there's any job listings online."
+    ##TODO: Add a computer background here
+    povname "I walk back to my room and to my PC when I notice an e-mail from my school."
+    povname "It said that there was a job opening at the library at school."
+    povname "'Let's see it looks like all you need in order to apply is to fill our a form about my student information and at times I'll be able to work.'"
+    povname "'I thought it would make the most sense for me to go to work after classes so I fill in in the appropriate information.'"
+    povname "I fill out the online form, submit it and give the number on the e-mail a call."
+    povname "'Hey this is [povname] calling about the job opening at the library."
+    libraryw "'Oh [povname], that was quick we just submmited that request to fill up a slot.'"
+    libraryw "'Give me one quick second to verify all the information you sent us.'"
+    povname "I waited about 5 minutes, while the library worker looked through my information."
+    libraryw "'Yep looks like everything is good to go, let me briefly explain what your job entails.'"
+    libraryw "'Recently many people have been keeping books very disorganized at school.'"
+    libraryw "'Your job will be getting those books and sorting them into the right place.'"
+    libraryw "'The better job you do the more you will get paid.'"
+    libraryw "'It will make a lot more sense when you get here and just start working, we're severely understaffed right now so any help would be great.'"
+    povname "'That sounds simple enough I'll see you tomorrow.'"
+    povname "I hang up the phone."
+    povname "'Well that was easy enough, I hope I do a good job any bit of pocket change would be very useful right now.'"
+    povname "I got ready to go to bed, and decided to call it early tonight."
+    scene blank with dissolve
+    phone "The easy process of getting hired at the school library made you feel less stressed about money."
+    $ stress-= 1
+    phone "You lost one stress."
+    jump day3

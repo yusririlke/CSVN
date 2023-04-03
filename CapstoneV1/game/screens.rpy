@@ -297,21 +297,31 @@ screen navigation():
 
         if main_menu:
 
-            textbutton _("New Game") action Start()
+            textbutton _("New Game"):
+               activate_sound "audio/menu.wav"
+               action Start()
 
-            
+
 
 
 
         else:
 
-            textbutton _("History") action ShowMenu("history")
+            textbutton _("History"):
+               activate_sound "audio/menu.wav"
+               action ShowMenu("history")
 
-            textbutton _("Save") action ShowMenu("save")
+            textbutton _("Save"):
+               activate_sound "audio/menu.wav"
+               action ShowMenu("save")
 
-        textbutton _("Load") action ShowMenu("load")
+        textbutton _("Load"):
+               activate_sound "audio/menu.wav"
+               action ShowMenu("load")
 
-        textbutton _("Options") action ShowMenu("preferences")
+        textbutton _("Options"):
+               activate_sound "audio/menu.wav"
+               action ShowMenu("preferences")
 
         if _in_replay:
 

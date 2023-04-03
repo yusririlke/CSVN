@@ -1,7 +1,10 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
+default score = 0
+image library = ("images/library.png")
 define teacher = Character("Teacher")
+define lily = Character("Lily")
 define libraryw = Character("Worker")
 define profe = Character("Array")
 define phone = Character("Phone")
@@ -17,7 +20,6 @@ define reena = Character("Reena")
 define stomach = Character("Stomach")
 define worker = Character("Volunteer")
 define book = Character("Textbook")
-define lily = Character("Lily")
 default knowledge = 1
 default stress = 5
 default money = 10
@@ -39,9 +41,13 @@ image hello = "images/helloworld.png"
 image hello1 = "images/helloworld1.png"
 image hello2 = "images/helloworld2.png"
 image hellop = "images/helloworldprac.png"
-image living day = "images/living_day.png"
-image dtype1 = "images/dtype1.png"
-
+image hello2ce = "images/hello2ce.png"
+image whilel = "images/whileloop.jpg"
+image whilel2 = "images/whileloop1.jpg"
+image whilel3 = "images/whileloop2.jpg"
+image whilel4 = "images/whileloop3.jpg"
+image whilel5 = "images/whileloop4.jpg"
+image pointer1 = "images/pointer1.png"
 # The game starts here.
 
 label start:
