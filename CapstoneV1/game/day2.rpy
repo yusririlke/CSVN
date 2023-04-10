@@ -8,7 +8,7 @@ scene bg dorm with dissolve
 play music "audio/dorm.wav"
 povname "'Must have been that study session last night made me oversleep."
 povname "I leave my room and see vic in the common area."
-
+scene living day with dissolve
 show vicNeutral with dissolve
 vic "'You're up late again as per usual.''"
 vic "'Guess yesterday was the exception, you already feeling comfortable after day one already?"
@@ -41,6 +41,7 @@ povname "I realized he was calling on me to answer this"
 povname "Now what was it again, this is a hello world program so the inside of the main should be saying hello world"
 
 menu:
+    extend ''
     "cout << 'Hello World!'":
         play sound "audio/confirm.wav"
         jump cout
@@ -109,6 +110,7 @@ label day2c:
     vic "'More of the same feels like classes haven't even actually begun.'"
     povname "'Yeah I get it anyway let's get food.'"
     povname "I walk up to the same counter as yesterday and get a pizza.'"
+    $ money -=5
     vic "'How are you doing on money by the way, getting food every day has to be piling up.'"
     povname "'Now that you mention it, I am getting kind of low on funds.'"
     vic "'You have to be careful [povname], low money is a big cause of stress.'"
@@ -119,10 +121,11 @@ label day2c:
     phone "'If stress gets to high you will drop out, and it is an instant game over.'"
     phone "'Make sure to watch your stress levels.'"
     phone "'You then decide to walk back home with Vic.'"
-    scene bg dorm with dissolve
+    scene dorm night with dissolve
     povname "Cost of lunch is starting to pile up."
     povname "I'm going to need to find a source of money, I wonder if there's any job listings online."
-    ##TODO: Add a computer background here
+    ##TODO: Placeholder computer bg for approval
+    scene computerGen with dissolve
     povname "I walk back to my room and to my PC when I notice an e-mail from my school."
     povname "It said that there was a job opening at the library at school."
     povname "'Let's see it looks like all you need in order to apply is to fill our a form about my student information and at times I'll be able to work.'"

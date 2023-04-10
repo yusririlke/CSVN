@@ -1,7 +1,6 @@
 label day6:
 show clock with dissolve
 play music "audio/alarm.mp3" volume 8 loop
-
 povname "guh..."
 povname "I roll over to my alarm clock and hit the stop button."
 povname "'Guess I'm on time today.'"
@@ -12,7 +11,8 @@ scene bg dorm
 play music "audio/dorm.wav" loop
 
 povname "I should probably shower and refresh for today."
-#TODO:fade in fade out, like time passing kinda deal
+scene blank with fade
+
 povname "You know, lamps in videogames use real elctricity. hmm"
 povname "Putting on something vaguely acceptable I headed out to the common area."
 
@@ -39,20 +39,24 @@ label worklate:
     povname "'I think they'll need me at the library. We just recieved a large order of the new textbooks.'"
     povname "'Somebody has to sort them out'"
     vic "I guess so, well go get that bread then."
+    jump contD6
 
 label comeback:
     povname "'I have a long enough day ahead. Maybe we'll meet at lunch and —'"
     vic "Yo! that means you're gonna be around for — Oh wait."
     povname "Eh?"
+    jump contD6
 
 label indecisive:
     povname "'I'm not too sure yet'"
     povname "'On the one hand, they would probably need my help at the library today'"
     povname "' On the other hand, I've done a good amount of work, I think."
+    jump contD6
 
-vic "So, are we still on for lunch, then?"
-povname "Oh, absolutely. I'll see you at lunch"
-vic "okie doke."
+label contD6:
+    vic "So, are we still on for lunch, then?"
+    povname "Oh, absolutely. I'll see you at lunch"
+    vic "okie doke."
 
 scene outschool with dissolve
 povname "Well, I heard today's class is going to be a little more complex."
@@ -78,12 +82,12 @@ povname  "Oh no, it's already confusing..."
 profe "I'm talking of course, about pointers."
 #TODO: Add and edit pointer1
 show pointer1 with dissolve
-profe "Now let's see if you can spot he pointer."
+profe "Now let's see if you can spot the pointer."
 profe "Anything seem so familiar, yet so foreign?"
 
 povname "Wait, why is that int on line 6, uh starry?"
 
-profe "Alright, I see some co9nfused looks in here."
+profe "Alright, I see some confused looks in here."
 profe "For those of you yet to cotton on, look at line 6."
 profe "That is how a pointer is initialised."
 profe "The declaration int* means that it's a pointer and on top of that, a pointer to an int."
@@ -124,6 +128,7 @@ label wrongans:
     povname "...num?"
     profe "Good guess but not quite."
     $ knowledge += 1
+    jump contD6_1
 
 label rightans:
     povname "I raise my hand.The value of num should be..."
@@ -132,11 +137,15 @@ label rightans:
     povname "'I think so?'"
     profe "Well, you thought absolutely right. Good job."
     $ knowledge += 2
+    jump contD6_1
 
 label panik:
     povname "I look down at my notes, well then I think.."
     profe "Well, then let me tell you."
+    jump contD6_1
 
+
+label contD6_1:
 profe "The output is  5."
 profe "So what happens here is that cout looks at *ptr and goes"
 profe "'Ah, that's a pointer. I should go to the address it's pointing to.'"
@@ -176,13 +185,14 @@ povname "Poring out with the masses, I headed for the cafeteria. All these point
 scene cafeteria with dissolve
 povname "I queued up with the rest and picked out my food. I still think that the price hike is a little steep."
 povname "Just when I get money, I lose it all again."
+$ money -=7
 povname "I sit down at one of the tables"
 povname "sigh~"
 
 show vicNeutral with dissolve
 vic "That was a loong sigh bud. All good?"
 povname "'Yeah, all good. It's just about the exam tomorrow, I'm kinda nervous.'"
-vic "Yeah I getcha. It's not like I'm making any progress on kmy assignment either."
+vic "Yeah I getcha. It's not like I'm making any progress on my assignment either."
 vic "I'm just not inspired, y'know?"
 povname "'Alright then, Picasso...'"
 
@@ -215,27 +225,71 @@ label homeC:
 
 label vicC:
     vic "Alright then, stay safe."
-    vic "And don't push yoursel too hard."
+    vic "And don't push yourself too hard."
     povname "I'll try not to. Thanks."
     jump homeward
 label libWork:
-    #TODO: Library_exterior show here
+
+    scene libraryOut with dissolve
     povname "I'll work for a bit, I guess."
-    #TODO: Show library interior here.
+    scene libraryCounter with dissolve
     show girl with dissolve
     lily "OH, thank goodness, you're here. We're quite busy right now so please lend us a hand."
-    #TODO: Implement tetris here:p
+    hide libraryCounter
+    hide girl
+    jump tetris6
+
+label contD6_2:
+scene libraryCounter with dissolve
+show girl
+play music "audio/dorm.wav" loop
+show girl with fade
+if dog6 >= 20:
+    jump worst_ending6
+elif dog6 >= 50:
+    jump medium_ending6
+elif dog6 >= 100:
+    jump best_ending6
+
+label worst_ending6:
+    lily "'You got a score of [dog6]!'"
+    lily "'That means you earned $7'"
+    $money += 7
+    lily "'Here is your reward for today.'"
+    lily "'I'll see you tomorrow!'"
+    povname "Well, that wasn't the best possible result, but I still got paid so guess I'll go home."
+    povname "I then started walking home."
+    jump homeward
+
+label middle_ending6:
+    lily "'You got a score of [dog6]!'"
+    lily "'That means you earned $12'"
+    $money += 12
+    lily "'Here is your reward for today.'"
+    lily "'I'll see you tomorrow!'"
+    povname "Well, that wasn't the best possible result, but I still got paid so guess I'll go home."
+    povname "I then started walking home."
+    jump homeward
+label best_ending6:
+    lily "'You got a score of [dog6]!'"
+    lily "'That means you earned $22'"
+    $money += 22
+    lily "'Here is your reward for today.'"
+    lily "'I'll see you tomorrow!'"
+    povname "Wow that was the best result, I got paid so I'll start going home."
+    povname "I then started walking home."
     jump homeward
 
 label homeward:
     povname "I slowly made my way home."
-    scene bg dorm
+    scene dorm night with dissolve
     povname "'I have to study for tomorrow."
-    #TODO: SHow passing time
+    scene blank with fade
+    scene dorm night with dissolve
     povname "Well, that was tiring."
     $ knowledge+=2
     povname "I changed and dove headfirst into my bed, narrowly missing the bedpost"
     povname "Tomorrow's a big day. I have to stay rested."
     povname "As I drifted off, I wondered, do robots REALLY dream of electric sheep."
-    screen blank with dissolve
+    scene blank with dissolve
     #jump day7

@@ -3,6 +3,8 @@
 
 default score = 0
 image library = ("images/library.png")
+define student = Character("Student")
+define student2 = Character("Student2")
 define teacher = Character("Teacher")
 define lily = Character("Lily")
 define libraryw = Character("Worker")
@@ -23,14 +25,22 @@ define book = Character("Textbook")
 default knowledge = 1
 default stress = 5
 default money = 10
+image living day = "images/living_day.png"
+image hw5 = "images/HW5.png"
+image array1 = "images/Array1.png"
+image arrays = "images/ArrayStr.png"
+image array2 = "images/Array2.png"
+image array3 = "images/Array3.png"
 image ibook = "images/book.png"
 image clock = "images/clock.png"
 image prof = "images/prof.png"
 image cafeteria = "images/cafeteria.png"
 image  bg dorm = "images/bg_dorm.png"
+image  dorm night = "images/dorm_night.png"
+image  living night= "images/livingnight.png"
 image hall = "images/hall.jpg"
 image aud = "images/aud.png"
-image blank = "images/blank.jpg"
+image blank = "images/blank.png"
 image orientation = "images/orientation.png"
 image girl = "images/girl.png"
 image vicNeutral = "vicNeutral.png"
@@ -47,6 +57,11 @@ image whilel2 = "images/whileloop1.jpg"
 image whilel3 = "images/whileloop2.jpg"
 image whilel4 = "images/whileloop3.jpg"
 image whilel5 = "images/whileloop4.jpg"
+image libraryOut = "images/libraryOut.png"
+image libraryCounter = "images/libraryCounter.png"
+image computerGen = "images/computer_gen.png"
+image dtype1 = "images/dtype1.png"
+image dtype2 = "images/dtype2.png"
 image pointer1 = "images/pointer1.png"
 # The game starts here.
 

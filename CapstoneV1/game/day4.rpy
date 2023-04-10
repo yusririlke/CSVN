@@ -142,23 +142,22 @@ menu:
 
 
 
-##TODO:Have a library CG
 
 label rest4:
-    povname "I decided to get some rest, classes today were tiring."
-    povname "I started walking back home."
-    scene bgdorm
-    povname "When I got home I saw Vic using swetch to play some Werio Kart."
-    povname "I decided to join him and had a good time."
-    $stress -= 1
-    phone "You had a good time playing video games with your friend, and you lost a point of stress."
-    jump hw4
+scene bg dorm
+povname "I decided to get some rest, classes today were tiring."
+povname "I started walking back home."
+povname "When I got home I saw Vic using swetch to play some Werio Kart."
+povname "I decided to join him and had a good time."
+$stress -= 1
+phone "You had a good time playing video games with your friend, and you lost a point of stress."
+jump hw4
 
 
 label lib4:
 povname "I thought it was best I go to work, I did promise after all."
 povname "I start walking to the library."
-scene library with dissolve
+scene libraryCounter with dissolve
 show girl with fade
 lily "'You came to help, thank you!'"
 lily "'Today is going to be more of the same from last time do your best!'"
@@ -185,7 +184,7 @@ label worst_ending:
     $money += 5
     lily "'Here is your reward for today.'"
     lily "'I'll see you tomorrow!'"
-    povname "Well, that wasn't the best possible result, but I still got payed so guess I'll go home."
+    povname "Well, that wasn't the best possible result, but I still got paid so guess I'll go home."
     povname "I then started walking home."
     jump hw4
 
@@ -195,7 +194,7 @@ label middle_ending:
     $money += 10
     lily "'Here is your reward for today.'"
     lily "'I'll see you tomorrow!'"
-    povname "Well, that wasn't the best possible result, but I still got payed so guess I'll go home."
+    povname "Well, that wasn't the best possible result, but I still got paid so guess I'll go home."
     povname "I then started walking home."
     jump hw4
 label best_ending:
@@ -204,25 +203,27 @@ label best_ending:
     $money += 20
     lily "'Here is your reward for today.'"
     lily "'I'll see you tomorrow!'"
-    povname "Wow that was the best result, I got payed so I'll start going home."
+    povname "Wow that was the best result, I got paid so I'll start going home."
     povname "I then started walking home."
     jump hw4
 
 
 
 label hw4:
-scene bg dorm
+scene dorm night with dissolve
+
 povname "After finishing everything from before. I returned to my desk."
 povname "Guess it's time I started working on that homework."
 #TODO:jump hw4
-
+scene blank with dissolve
+jump end4
 
 
 label end4:
-scene bg dorm
+scene dorm night with dissolve
 povname "Today felt like an even longer day than yesterday."
 povname "I just want to get some sleep and get ready for tomorrow."
 povname "Upon laying on my bed my eyes instantly start zoning out and I start going to bed."
 scene blank with dissolve
 
-#TODO:jump day5
+jump day5

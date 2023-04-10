@@ -9,8 +9,8 @@ me "I woke up feeling groggy as my eyes started adjusting to my new surroundings
 
 me "Another nightmare, hope they don't keep happening even with me in college."
 me "I turn off my alarm, and get up from my bed."
-hide clock with dissolve
-scene bg dorm
+
+scene bg dorm with dissolve
 play music "audio/dorm.wav" loop
 
 
@@ -24,7 +24,7 @@ show vicNeutral with dissolve
 vic  "'Don’t sweat it, we got time.'"
 vic  "'I made us some breakfast bagels. I’m gonna go save us some seats so don’t be late, sleepyhead!'"
 
-me "Vic short for Victor is a classic chill liberal arts major, ready to talk to anyone about anything and extend a friendly hand."
+me "Vic, short for Victor, is a classic chill liberal arts major, ready to talk to anyone about anything and extend a friendly hand."
 
 me "I just met him a week ago, but we quickly got along like we've known each other since elementary school."
 
@@ -127,10 +127,10 @@ povname "'Oh shoot Vic, you made us miss the whole thing'"
 vic "'Eh. *shrugs* I wouldn’t sweat it too much, we can just go look at ‘em later tonight.'"
 
 povname "'Sounds like a plan.'"
-
+scene blank with dissolve
 povname "'We decide to return home after and put all the goodies we recieved from the event.'"
 
-scene bg dorm with dissolve
+scene living day with dissolve
 
 show vicNeutral with dissolve
 vic "'That ice cream was great! We got to meet the other students, and everyone's so friendly here.'"
@@ -142,12 +142,13 @@ povname "'I still can't believe that the school used to be a pickle farm.'"
 vic "'You gotta get them sodium sticks somehow.'"
 
 #following exchange seems contrived
-vic "'So, whatcha wanna do now since we're free untill the first day of class tomorrow? '"
+vic "'So, whatcha wanna do now since we're free until the first day of class tomorrow? '"
 vic "'I think I'm gonna chill here and relax, ice cream doesn't sit well with me, but I just can't resist~'"
 
 povname "'Ummm well... What do I do now?'"
 
 menu:
+    extend''
     "Go back to my room and relax":
         play sound "audio/confirm.wav"
         jump relax
@@ -167,7 +168,9 @@ label relax:
     show vicNeutral with dissolve
     vic "'Alright sounds like a good idea, see you tomorrow then.'"
     hide vicNeutral
+    scene dorm night with dissolve
     povname "I go back to my room, lay on my bed and realize that tomorrow is my first day of class."
+
     $ stress -= 1
     povname "Both excited and nervous, I feel ready for my first day of CS to begin."
     scene blank with dissolve
@@ -188,7 +191,7 @@ label tour:
     povname "Upon exploring I look for the classrooms for my first day of class."
     povname "While most of them are easy to find, one of them was in an awkward hallway that had me lost."
     povname "Feeling happy that I explored campus I return back to my dorm."
-    scene bg dorm with dissolve
+    scene dorm night with dissolve
     povname "I return to my room, lay on my bed and realize that tomorrow is my first day of class."
     povname "Both excited and nervous, I feel ready for my first day of CS to begin."
     scene blank with dissolve
@@ -205,7 +208,9 @@ label unpack:
     vic "'Alright sounds like a good idea, see you tomorrow then.'"
     hide vicNeutral
     povname "A place for everything and everything in it's place, or something. At least it's not in boxes anymore."
+    scene dorm night with dissolve
     povname "While unpacking my stuff I found a 10 dollar bill!"
+
     povname "I added it to my wallet feeling happier."
     $ money += 10
     unknown "'Because you decided to clean up your stuff you were able to find some money.'"
