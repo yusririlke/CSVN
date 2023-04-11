@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/day1.rpy", line 8: Line is indented, but the preceding say menuitem statement does not expect a block. Please check this line's indentation.
-    "Wake up":
+File "game/day4.rpy", line 137: Line is indented, but the preceding say menuitem statement does not expect a block. Please check this line's indentation.
+    "Go to work at the library":
     ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Mon Apr 10 00:58:48 2023
+Tue Apr 11 00:35:59 2023

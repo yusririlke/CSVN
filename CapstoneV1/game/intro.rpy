@@ -207,11 +207,11 @@ label unpack:
     show vicNeutral with dissolve
     vic "'Alright sounds like a good idea, see you tomorrow then.'"
     hide vicNeutral
+    scene bg dorm with dissolve
     povname "A place for everything and everything in it's place, or something. At least it's not in boxes anymore."
     scene dorm night with dissolve
-    povname "While unpacking my stuff I found a 10 dollar bill!"
-
-    povname "I added it to my wallet feeling happier."
+    povname "Ooh, what's this?"
+    povname "Smells like a $10 bill. What luck!"
     $ money += 10
     unknown "'Because you decided to clean up your stuff you were able to find some money.'"
     jump stattuto

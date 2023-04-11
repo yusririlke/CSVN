@@ -79,9 +79,9 @@ scene classday with dissolve
 show prof with dissolve
 profe "Alright, that's all the learning we have for today. Dismissed"
 povname "I should probably head out to the library"
-show libraryOut with dissolve
+scene libraryOut with dissolve
 povname "This should be the place, I think."
-show libraryCounter with dissolve
+scene libraryCounter with dissolve
 povname "As I pass through the large glass entrance, a familiar face looks up at me."
 
 show girl
@@ -90,25 +90,23 @@ lily "Ah, you're uhm... [povname] right? They told me there was a new hire"
 lily "Right, I assume the boss has given you the whole onboarding schtick,eh?"
 povname "I nod my head sheepishly."
 lily "Ah, good. Here's your assignment for the day, you're stacking books over at Periodicals."
-hide libraryCounter
-hide girl
+
 
 jump tetris3
 
 label continue3:
     scene library with dissolve
-    show girl
     play music "audio/dorm.wav" loop
     show girl with fade
-    if dog3 <= 20:
+    if dog <= 1000:
         jump worst_ending3
-    elif dog3 > 20:
+    elif dog <= 1001:
         jump medium_ending3
-    elif dog3 >= 100:
+    elif dog <= 1002:
         jump best_ending3
 
     label worst_ending3:
-        lily "'You got a score of [dog3]!'"
+        lily "'You got a score of [dog]!'"
         lily "'That means you earned $5'"
         $money += 5
         lily "Nice try but you're still very new at this, huh?"
@@ -116,7 +114,7 @@ label continue3:
         povname "Well, that could've gone better, but I still got paid so guess I'll go home."
         jump homeward3
 
-    label middle_ending3:
+    label medium_ending3:
         lily "'You got a score of [dog3]!'"
         lily "'That means you earned $10'"
         $money += 10
@@ -155,7 +153,7 @@ show vicNeutral with dissolve
 vic "Have ya eaten? I ordered waaay too much. Feel free to take a plate and dig in."
 povname "I looked at the whole smorgasbord on the table."
 povname "There was half a cheesesteak, what was once some cheesy nachos and half a bowl of salad."
-povname "I gave vic a judgemental stare"
+povname "I gave Vic a judgemental stare"
 vic "Look, In my defense I was REALLY hungry."
 povname "I grab a plate from the rack and picked up..."
 menu:
@@ -192,4 +190,6 @@ scene dorm night with dissolve
 povname "I finished the rest of the food and settled into bed"
 povname "Never thought stacking books would take so much out of me. Hopefully tomorrow will be better. "
 scene blank with dissolve
+$foo += 1
+
 jump day4

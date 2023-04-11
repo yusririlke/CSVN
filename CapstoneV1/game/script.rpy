@@ -1,7 +1,9 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
+#TODO:Update tetris assets
 
 default score = 0
+default foo = 1
 image library = ("images/library.png")
 define student = Character("Student")
 define student2 = Character("Student2")

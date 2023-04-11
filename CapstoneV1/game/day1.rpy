@@ -28,8 +28,8 @@ label cont1:
     povname "So I got up and prepped for class."
     scene living day with dissolve
     povname "'Vic? Vic wake up, sleepyhead~'"
-    povname "VIC!"
-    #TODO: Make shake
+    povname "VIC!" with hpunch
+
     show vicNeutral with dissolve
     vic "mmngh..."
     vic "Mommy?"
@@ -85,8 +85,8 @@ label cont2:
 
         povname "Yeah, seems a bit odd that it's that stacked in here, but also makes sense since it's around mid-day."
 
-        stomach "*grumble grrrr angy noise*"
-        #TODO: Put actual whale call/ grumbling noises
+        play sound "audio/stomach.mp3"
+
 
         vic "'Hahaha! Couldn't have said it better myself! Lets go get some food!'"
 

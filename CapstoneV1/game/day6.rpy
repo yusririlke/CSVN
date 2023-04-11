@@ -18,7 +18,7 @@ povname "Putting on something vaguely acceptable I headed out to the common area
 
 scene living day with dissolve
 vic "Hello there."
-show vicNeutral with fade
+show vicNeutral with dissolve
 povname "'Ah, Jenderal Kenobi...'"
 vic "Heh."
 vic "Well, are ya gonna be working late again today, or are ya gonna come back early?"
@@ -73,14 +73,13 @@ profe "For those in the back, how goes it? Haven't seen you in a while."
 
 povname "I glance over at them. I've seen those people before."
 povname "They're usually very loud and on campus."
-povname "Now, they jsut seem a little sheepish as they awkwardly look down at their notebooks."
+povname "Now, they just seem a little sheepish as they awkwardly look down at their notebooks."
 
 profe "Anyway."
 profe "On to today's topic, we're gonna have a little chat about signposts and arrows."
 povname "Eh?"
 povname  "Oh no, it's already confusing..."
 profe "I'm talking of course, about pointers."
-#TODO: Add and edit pointer1
 show pointer1 with dissolve
 profe "Now let's see if you can spot the pointer."
 profe "Anything seem so familiar, yet so foreign?"
@@ -237,22 +236,22 @@ label libWork:
     lily "OH, thank goodness, you're here. We're quite busy right now so please lend us a hand."
     hide libraryCounter
     hide girl
-    jump tetris6
+    jump tetris3
 
-label contD6_2:
+label continue6:
 scene libraryCounter with dissolve
 show girl
 play music "audio/dorm.wav" loop
 show girl with fade
-if dog6 >= 20:
+if dog <= 1000:
     jump worst_ending6
-elif dog6 >= 50:
+elif dog <= 1001:
     jump medium_ending6
-elif dog6 >= 100:
+elif dog <= 1002:
     jump best_ending6
 
 label worst_ending6:
-    lily "'You got a score of [dog6]!'"
+    lily "'You got a score of [dog]!'"
     lily "'That means you earned $7'"
     $money += 7
     lily "'Here is your reward for today.'"
@@ -261,8 +260,8 @@ label worst_ending6:
     povname "I then started walking home."
     jump homeward
 
-label middle_ending6:
-    lily "'You got a score of [dog6]!'"
+label medium_ending6:
+    lily "'You got a score of [dog]!'"
     lily "'That means you earned $12'"
     $money += 12
     lily "'Here is your reward for today.'"
@@ -271,7 +270,7 @@ label middle_ending6:
     povname "I then started walking home."
     jump homeward
 label best_ending6:
-    lily "'You got a score of [dog6]!'"
+    lily "'You got a score of [dog]!'"
     lily "'That means you earned $22'"
     $money += 22
     lily "'Here is your reward for today.'"
@@ -292,4 +291,5 @@ label homeward:
     povname "Tomorrow's a big day. I have to stay rested."
     povname "As I drifted off, I wondered, do robots REALLY dream of electric sheep."
     scene blank with dissolve
+    $foo += 1
     #jump day7

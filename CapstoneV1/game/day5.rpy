@@ -87,12 +87,13 @@ $money -= 7
 
 povname "Alright, I finished all my classes what should I do now?"
 menu:
-     "Go to work at the library":
-        play sound "audio/confirm.wav"
-        jump lib5
-     "Go back home and study for the exam":
-        play sound "audio/confirm.wav"
-        jump study5
+    extend''
+    "Go to work at the library":
+       play sound "audio/confirm.wav"
+       jump lib5
+    "Go back home and study for the exam":
+       play sound "audio/confirm.wav"
+       jump study5
 
 
 
@@ -120,22 +121,22 @@ lily "'You came to help, thank you!'"
 lily "'Today is going to be more of the same from last time do your best!'"
 hide library
 hide girl
-jump tetris5
+jump tetris3
 
 label continue5:
 scene library with dissolve
 show girl
 play music "audio/dorm.wav" loop
 show girl with fade
-if dog5 >= 20:
+if dog <= 1001:
     jump worst_ending5
-elif dog5 >= 50:
+elif dog <= 1500:
     jump medium_ending5
-elif dog5 >= 100:
+elif dog <= 1501:
     jump best_ending5
 
 label worst_ending5:
-    lily "'You got a score of [dog5]!'"
+    lily "'You got a score of [dog]!'"
     lily "'That means you earned $5'"
     $money += 5
     lily "'Here is your reward for today.'"
@@ -144,7 +145,7 @@ label worst_ending5:
     povname "I then started walking home."
     jump hw5
 
-label middle_ending5:
+label medium_ending5:
     lily "'You got a score of [dog5]!'"
     lily "'That means you earned $10'"
     $money += 10
@@ -173,6 +174,7 @@ povname "I open my book and go the assigned question."
 show hw5 with dissolve
 book "In the following code the goal is to print 5, but we're not getting the desired output why?"
 menu:
+    extend''
     "Arrays are 0 based so it would print 10 instead of 5":
         play sound "audio/confirm.wav"
         jump correct5
@@ -206,4 +208,5 @@ label end5:
     povname "I went on my bed and scrolled through memes on my phone that made me chuckle."
     povname "Before I knew it I was drifting to sleep."
     scene blank with dissolve
+    $foo += 1
     jump day6

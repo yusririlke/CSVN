@@ -14,6 +14,7 @@ play music "audio/dorm.wav" loop
 povname "After getting up I realized that while I still struggled getting up in the morning, I haven't had the reocurring nightmares from highschool."
 povname "'Guess I've been too busy to think about them recently."
 povname "I change into a new pair of clothes and head out to the common area."
+scene living day with dissolve
 povname "Walking into the common area I see no sign of Vic."
 povname "'Well that's new did I wake up earlier than him today?"
 povname "'Right on cue of me saying this I see a slightly disheveled looking Vic walk out of his room."
@@ -132,12 +133,13 @@ povname "I also had lunc with Vic and lost some money."
 $money -= 5
 povname "Alright, I finished all my classes what should I do now?"
 menu:
-     "Go to work at the library":
-        play sound "audio/confirm.wav"
-        jump lib4
-     "Go back home and rest":
-        play sound "audio/confirm.wav"
-        jump rest4
+    extend''
+    "Go to work at the library":
+       play sound "audio/confirm.wav"
+       jump lib4
+    "Go back home and rest":
+       play sound "audio/confirm.wav"
+       jump rest4
 
 
 
@@ -163,7 +165,7 @@ lily "'You came to help, thank you!'"
 lily "'Today is going to be more of the same from last time do your best!'"
 hide library
 hide girl
-jump tetris
+jump tetris3
 
 
 label continue4:
@@ -171,14 +173,14 @@ scene library with dissolve
 show girl
 play music "audio/dorm.wav" loop
 show girl with fade
-if dog >= 20:
-    jump worst_ending
-elif dog >= 50:
-    jump medium_ending
-elif dog >= 100:
-    jump best_ending
+if dog <= 1000:
+    jump worst_ending4
+elif dog <= 1500:
+    jump medium_ending4
+elif dog <= 1501:
+    jump best_ending4
 
-label worst_ending:
+label worst_ending4:
     lily "'You got a score of [dog]!'"
     lily "'That means you earned $5'"
     $money += 5
@@ -188,7 +190,7 @@ label worst_ending:
     povname "I then started walking home."
     jump hw4
 
-label middle_ending:
+label medium_ending4:
     lily "'You got a score of [dog]!'"
     lily "'That means you earned $10'"
     $money += 10
@@ -197,7 +199,7 @@ label middle_ending:
     povname "Well, that wasn't the best possible result, but I still got paid so guess I'll go home."
     povname "I then started walking home."
     jump hw4
-label best_ending:
+label best_ending4:
     lily "'You got a score of [dog]!'"
     lily "'That means you earned $20'"
     $money += 20
@@ -225,5 +227,7 @@ povname "Today felt like an even longer day than yesterday."
 povname "I just want to get some sleep and get ready for tomorrow."
 povname "Upon laying on my bed my eyes instantly start zoning out and I start going to bed."
 scene blank with dissolve
+$foo += 1
+
 
 jump day5
