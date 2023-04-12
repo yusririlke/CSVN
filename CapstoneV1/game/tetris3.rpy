@@ -668,8 +668,8 @@ label tetris3:
 
 
 
-        textbutton 'DAY5' action Hide('game_over'), Jump('tetris_reload3') align .5,.9
-        textbutton 'Continue' action Hide('game_over'), Jump('tracker') align .5,.8
+        textbutton 'Retry?' action Hide('game_over'), Jump('tetris_reload3') align .5,.9
+        textbutton 'Continue?' action Hide('game_over'), Jump('tracker') align .5,.8
 
     label tetris_start3:
         play music korobushka
@@ -713,4 +713,4 @@ label tetris3:
 
             hbox align .5,.5 spacing 30:
                 button background '#888' hover_background '#fff' xysize 800,200 action Function(set_mode_new), Return():
-                    text 'Start Game 3' align .5,.5 size 60 color '#000'
+                    text 'Start Game' align .5,.5 size 60 color '#000'
