@@ -92,8 +92,7 @@ hide vicNeutral
 
 #orientation starts
 unknown "'Hello new students and welcome to the wonderful world of po-'"
-#TODO: change college name
-conwell "'I mean welcome to “College name”, I am Dr. Conwell, the Dean of this campus.'"
+conwell "'I mean welcome to “CapyState University”, I am Dr. Conwell, the Dean of this campus.'"
 
 povname "'This professor seemed very different than what I thought the dean would look like.'"
 
@@ -207,11 +206,11 @@ label unpack:
     show vicNeutral with dissolve
     vic "'Alright sounds like a good idea, see you tomorrow then.'"
     hide vicNeutral
-    scene bg dorm with dissolve
     povname "A place for everything and everything in it's place, or something. At least it's not in boxes anymore."
     scene dorm night with dissolve
-    povname "Ooh, what's this?"
-    povname "Smells like a $10 bill. What luck!"
+    povname "While unpacking my stuff I found a 10 dollar bill!"
+
+    povname "I added it to my wallet feeling happier."
     $ money += 10
     unknown "'Because you decided to clean up your stuff you were able to find some money.'"
     jump stattuto

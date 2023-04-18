@@ -18,7 +18,7 @@ povname "Putting on something vaguely acceptable I headed out to the common area
 
 scene living day with dissolve
 vic "Hello there."
-show vicNeutral with dissolve
+show vicNeutral with fade
 povname "'Ah, Jenderal Kenobi...'"
 vic "Heh."
 vic "Well, are ya gonna be working late again today, or are ya gonna come back early?"
@@ -73,7 +73,7 @@ profe "For those in the back, how goes it? Haven't seen you in a while."
 
 povname "I glance over at them. I've seen those people before."
 povname "They're usually very loud and on campus."
-povname "Now, they just seem a little sheepish as they awkwardly look down at their notebooks."
+povname "Now, they jsut seem a little sheepish as they awkwardly look down at their notebooks."
 
 profe "Anyway."
 profe "On to today's topic, we're gonna have a little chat about signposts and arrows."
@@ -292,4 +292,4 @@ label homeward:
     povname "As I drifted off, I wondered, do robots REALLY dream of electric sheep."
     scene blank with dissolve
     $foo += 1
-    #jump day7
+    jump day7

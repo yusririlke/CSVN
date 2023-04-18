@@ -124,7 +124,6 @@ label day2c:
     scene dorm night with dissolve
     povname "Cost of lunch is starting to pile up."
     povname "I'm going to need to find a source of money, I wonder if there's any job listings online."
-    
     scene computerGen with dissolve
     povname "I walk back to my room and to my PC when I notice an e-mail from my school."
     povname "It said that there was a job opening at the library at school."

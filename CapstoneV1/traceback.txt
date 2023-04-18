@@ -1,28 +1,22 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While loading <renpy.display.im.Image object ('gui/rotate.png') at 0x0000000005f8c460>:
-  File "game/tetris3.rpy", line 685, in script
-    call screen draw_tetris
-ScriptError: could not find label 'contD6_2'.
+While running game code:
+  File "game/day7.rpy", line 217, in script
+    profe "'That means you got a 40% try harder on the next exam.'"
+ValueError: unsupported format character 't' (0x74) at index 26
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "C:\Users\Yusri Zafri\Desktop\renpy-8.0.3-sdk\renpy\bootstrap.py", line 277, in bootstrap
-    renpy.main.main()
-  File "C:\Users\Yusri Zafri\Desktop\renpy-8.0.3-sdk\renpy\main.py", line 660, in main
-    run(restart)
-  File "C:\Users\Yusri Zafri\Desktop\renpy-8.0.3-sdk\renpy\main.py", line 146, in run
-    renpy.execution.run_context(True)
-  File "C:\Users\Yusri Zafri\Desktop\renpy-8.0.3-sdk\renpy\execution.py", line 938, in run_context
-    context.run()
-  File "game/tetris3.rpy", line 685, in script
-    call screen draw_tetris
-  File "C:\Users\Yusri Zafri\Desktop\renpy-8.0.3-sdk\renpy\script.py", line 927, in lookup
-    raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'contD6_2'.
+  File "game/day7.rpy", line 217, in script
+    profe "'That means you got a 40% try harder on the next exam.'"
+  File "C:\Users\alex1\OneDrive\Desktop\renpy-8.0.3-sdk\renpy\ast.py", line 921, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "C:\Users\alex1\OneDrive\Desktop\renpy-8.0.3-sdk\renpy\exports.py", line 1362, in say
+    what = what % tag_quoting_dict
+ValueError: unsupported format character 't' (0x74) at index 26
 
-Windows-10-10.0.19045 AMD64
+Windows-10-10.0.19044 AMD64
 Ren'Py 8.0.3.22090809
  Version 1.0
-Wed Apr 12 14:04:53 2023
+Sun Apr 16 19:51:12 2023

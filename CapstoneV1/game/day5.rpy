@@ -87,13 +87,12 @@ $money -= 7
 
 povname "Alright, I finished all my classes what should I do now?"
 menu:
-    extend''
-    "Go to work at the library":
-       play sound "audio/confirm.wav"
-       jump lib5
-    "Go back home and study for the exam":
-       play sound "audio/confirm.wav"
-       jump study5
+     "Go to work at the library":
+        play sound "audio/confirm.wav"
+        jump lib5
+     "Go back home and study for the exam":
+        play sound "audio/confirm.wav"
+        jump study5
 
 
 
@@ -174,7 +173,6 @@ povname "I open my book and go the assigned question."
 show hw5 with dissolve
 book "In the following code the goal is to print 5, but we're not getting the desired output why?"
 menu:
-    extend''
     "Arrays are 0 based so it would print 10 instead of 5":
         play sound "audio/confirm.wav"
         jump correct5

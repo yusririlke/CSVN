@@ -14,7 +14,6 @@ play music "audio/dorm.wav" loop
 povname "After getting up I realized that while I still struggled getting up in the morning, I haven't had the reocurring nightmares from highschool."
 povname "'Guess I've been too busy to think about them recently."
 povname "I change into a new pair of clothes and head out to the common area."
-scene living day with dissolve
 povname "Walking into the common area I see no sign of Vic."
 povname "'Well that's new did I wake up earlier than him today?"
 povname "'Right on cue of me saying this I see a slightly disheveled looking Vic walk out of his room."
@@ -133,13 +132,12 @@ povname "I also had lunc with Vic and lost some money."
 $money -= 5
 povname "Alright, I finished all my classes what should I do now?"
 menu:
-    extend''
-    "Go to work at the library":
-       play sound "audio/confirm.wav"
-       jump lib4
-    "Go back home and rest":
-       play sound "audio/confirm.wav"
-       jump rest4
+     "Go to work at the library":
+        play sound "audio/confirm.wav"
+        jump lib4
+     "Go back home and rest":
+        play sound "audio/confirm.wav"
+        jump rest4
 
 
 
@@ -216,7 +214,6 @@ scene dorm night with dissolve
 
 povname "After finishing everything from before. I returned to my desk."
 povname "Guess it's time I started working on that homework."
-#TODO:jump hw4
 scene blank with dissolve
 jump end4
 

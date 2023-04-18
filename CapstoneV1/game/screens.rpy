@@ -331,7 +331,7 @@ screen navigation():
 
             textbutton _("Main Menu") action MainMenu()
 
-        textbutton _("About Us") action ShowMenu("about")
+        textbutton _("Credits") action ShowMenu("about")
 
         if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
 
@@ -573,7 +573,14 @@ screen about():
             if gui.about:
                 text "[gui.about!t]\n"
 
-            text _("Made with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]")
+            text _("Made with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n")
+            text _("Orignal Story by: Alex Lee, Hamza Bachnak, Yusri Zafri\n")
+            text _("Art by: NovelAI and gogodinosaur.itch.io\n")
+            text _("\nProgrammed by: Alex Lee, Hamza Bachnak, Yusri Zafri\n")
+            text _("Music: Wayfinding StudioMeowMeow #looptober2021 from http://abstractionmusic.bandcamp.com/\n")
+            text _("Club Bones StudioMeowMeow #looptober2021 from http://abstractionmusic.bandcamp.com/\n")
+            text _("Brad Gilbertson - Chipper Intro Music #1 from https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=5925%22%3EPixabay")
+
 
 
 style about_label is gui_label

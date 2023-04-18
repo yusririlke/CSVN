@@ -1,8 +1,9 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
-#TODO:Update tetris assets
+
 
 default score = 0
+default finals = 0
 default foo = 1
 image library = ("images/library.png")
 define student = Character("Student")
@@ -65,6 +66,11 @@ image computerGen = "images/computer_gen.png"
 image dtype1 = "images/dtype1.png"
 image dtype2 = "images/dtype2.png"
 image pointer1 = "images/pointer1.png"
+image final1 = "images/FinalQ1.png"
+image final3 = "images/FinalQ3.png"
+image final4 = "images/FinalQ4.png"
+image final5 = "images/FinalQ5.png"
+
 # The game starts here.
 
 label start:

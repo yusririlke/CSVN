@@ -668,8 +668,7 @@ label tetris3:
 
 
 
-        textbutton 'Retry?' action Hide('game_over'), Jump('tetris_reload3') align .5,.9
-        textbutton 'Continue?' action Hide('game_over'), Jump('tracker') align .5,.8
+        textbutton 'Continue' action Hide('game_over'), Jump('tracker') align .5,.8
 
     label tetris_start3:
         play music korobushka

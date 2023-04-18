@@ -2,9 +2,8 @@
 errors listed below, and try again.
 
 
-File "game/day4.rpy", line 137: Line is indented, but the preceding say menuitem statement does not expect a block. Please check this line's indentation.
-    "Go to work at the library":
-    ^
+File "game/screens.rpy", line 578: is not terminated with a newline. (Check strings and parenthesis.)
+                text _(
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Tue Apr 11 00:35:59 2023
+Sun Apr 16 20:47:40 2023

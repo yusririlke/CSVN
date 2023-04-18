@@ -91,7 +91,7 @@ lily "Right, I assume the boss has given you the whole onboarding schtick,eh?"
 povname "I nod my head sheepishly."
 lily "Ah, good. Here's your assignment for the day, you're stacking books over at Periodicals."
 
-
+#TODO:IT JUMPS TO TETRIS DAY 6 HERE WHY????
 jump tetris3
 
 label continue3:
@@ -153,7 +153,7 @@ show vicNeutral with dissolve
 vic "Have ya eaten? I ordered waaay too much. Feel free to take a plate and dig in."
 povname "I looked at the whole smorgasbord on the table."
 povname "There was half a cheesesteak, what was once some cheesy nachos and half a bowl of salad."
-povname "I gave Vic a judgemental stare"
+povname "I gave vic a judgemental stare"
 vic "Look, In my defense I was REALLY hungry."
 povname "I grab a plate from the rack and picked up..."
 menu:
@@ -173,22 +173,18 @@ label cheesesteak:
     povname "'Isn't that a gas station?'"
     vic "Nah, it's a fuel station for you and your car."
     povname "I rolled my eyes at him."
-    jump cont_D3
 
 label nachos:
     vic "Oh Nachos! Those were super cheesy at some point."
     povname "'Yeah, but its nacho call now and I say it's soggyyy~'"
     vic "I take it back, that's waay cheesier"
-    jump cont_D3
 
 label salad:
-    vic "I see someone's on a diet. There's extra dressing on the side."
+    vic "I see someone's on a diet. THere's extra dressing on the side."
     povname "'Ranch, really?'"
     vic "I mean it's just spicy mayonnaise"
     povname "Vic, no."
-    jump cont_D3
 
-label cont_D3:
 scene dorm night with dissolve
 
 povname "I finished the rest of the food and settled into bed"
