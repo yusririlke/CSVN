@@ -4,12 +4,13 @@ povname "I woke up feeling a bit groggy, but quickly jolted awake as I realized 
 povname "Huh, looks like I woke up before my alarm. I probably shouldn’t go back to sleep buuuuut…"
 
 menu:
-     "Wake up":
-        play sound "audio/confirm.wav"
-        jump upuwu
-     "Go back to sleep":
-        play sound "audio/confirm.wav"
-        jump sleepyuwu
+    extend''
+    "Wake up":
+       play sound "audio/confirm.wav"
+       jump upuwu
+    "Go back to sleep":
+       play sound "audio/confirm.wav"
+       jump sleepyuwu
 
 label upuwu:
     povname "Knowing myself going back to sleep will probably just make me feel worse, no matter how tempting…"
@@ -24,13 +25,21 @@ label sleepyuwu:
     jump cont1
 
 label cont1:
-    povname "So I got up and prepped for class, nothing too eventful other than waking Vic up who managed to sleep on the couch playing all night."
-    scene outschool
+    povname "So I got up and prepped for class."
+    scene living day with dissolve
+    povname "'Vic? Vic wake up, sleepyhead~'"
+    povname "VIC!"
+    show vicNeutral with dissolve
+    vic "mmngh..."
+    vic "Mommy?"
+    povname "N-no. You should get going for class though."
+    vic "maybe later~"
+    scene outschool with dissolve
     povname "I’ve never been a morning person, but being here on my actual first day fills me with excitement."
     povname "I decide to go now, not wanting to be late."
     povname "I look at the school that I saw yesterday and wonder what my first day at comp sci is going to be like."
     povname "And with that thought I take my first step into the school as a freshman."
-    scene classday
+    scene classday with dissolve
     povname "When I came into the classroom, I was surprised to see that I was 15 minutes early, and there was no one there."
     povname "I got a little worried I may have entered the wrong room, but people soon began filtering in."
     povname "'Phew... I guess people were just tired from the early class.'"
@@ -95,7 +104,7 @@ label cont2:
 
         povname "'Same, it's cheaper and tastes better anyways.'"
 
-        phone "You lost $5 for getting lunch with Vic."
+        phone "You spent $5 for getting lunch with Vic."
 
         $ money -=5
 
@@ -115,7 +124,8 @@ label cont2:
 
 
 
-        scene bg dorm with dissolve
+        scene dorm night with dissolve
+
         play music "audio/study.wav" loop
         povname "After coming back home from lunch with Vic I started thinking about class."
         povname "Those intro programming questions were harder than I initially thought..."
@@ -131,6 +141,7 @@ label cont2:
         book "To get more information on why learn C++ go to page 1, for practical examples go to page 3."
 
 menu:
+    extend''
     "Learn more about why C++":
         play sound "audio/confirm.wav"
         jump whyC

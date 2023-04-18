@@ -2,9 +2,8 @@
 errors listed below, and try again.
 
 
-File "game/intro.rpy", line 38: end of line expected.
-    me "It seemed like they were all looking through pamphlets and talking to the workers about where they should go".
-                                                                                                                     ^
+File "game/screens.rpy", line 578: is not terminated with a newline. (Check strings and parenthesis.)
+                text _(
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Sat Mar 11 21:24:12 2023
+Sun Apr 16 20:47:40 2023
