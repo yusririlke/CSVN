@@ -5,8 +5,11 @@ Assets: Your hub for stuff you want to put in game
 
 Capstone V1: This is where the code and everything to do with renpy is stored, wheeee.
 	
-Documentation: Stuff we need to submit to the  clients that TALKS ABOUT us, our progress and/or our product.
+Documentation: Stuff we need to submit to the  clients that TALKS ABOUT us, our progress and/or our product. This includes any slides or presentation paraphernalia
 
-README: please, i exist to help you. validate my existence. Actually, I'm quite okay here but check in on me later.
+JourneyThroughCS: Contains release candidate binary and executables
+
+README: but please actually read me. I'm helpful!
+
 
 
