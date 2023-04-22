@@ -173,18 +173,22 @@ label cheesesteak:
     povname "'Isn't that a gas station?'"
     vic "Nah, it's a fuel station for you and your car."
     povname "I rolled my eyes at him."
+    jump cont_D3
 
 label nachos:
     vic "Oh Nachos! Those were super cheesy at some point."
     povname "'Yeah, but its nacho call now and I say it's soggyyy~'"
     vic "I take it back, that's waay cheesier"
+    jump cont_D3
 
 label salad:
-    vic "I see someone's on a diet. THere's extra dressing on the side."
+    vic "I see someone's on a diet. There's extra dressing on the side."
     povname "'Ranch, really?'"
     vic "I mean it's just spicy mayonnaise"
     povname "Vic, no."
+    jump cont_D3
 
+label cont_D3:
 scene dorm night with dissolve
 
 povname "I finished the rest of the food and settled into bed"
